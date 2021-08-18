@@ -92,6 +92,7 @@ background-size: cover;
 #wrapper{
 
 width: 100%;
+
 margin:50px auto;
 }
 
@@ -111,8 +112,11 @@ margin:50px auto;
 
 #grid1{
     padding:50px;
+    border-radius: 10px 0 0 10px;
 }
 
-
+#photo{
+    border-radius: 0 10px 10px 0;
+}
 }
 
