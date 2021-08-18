@@ -93,14 +93,17 @@ background-size: cover;
 
 width: 100%;
 
-margin:50px auto;
+margin:auto;
+
 }
 
 
 #card{
 
     justify-content: center;
-  
+align-content: center;
+
+height: 100vh;
     margin: auto;
     grid-template-columns: 45% 45%;
 }
@@ -120,3 +123,6 @@ margin:50px auto;
 }
 }
 
+footer{
+    margin:0;
+}
