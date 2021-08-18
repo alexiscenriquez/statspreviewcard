@@ -1,0 +1,118 @@
+:root{
+    --vDarkBlue:hsl(233, 47%, 7%);
+    --desatBlue:hsl(244, 38%, 16%);
+    --softViolet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --sTransWhite:hsla(0, 0%, 100%, 0.75);
+    --sTransWhite2:hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    background-color: var(--vDarkBlue);
+}
+h1{
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;}
+
+#insights{
+    color:var(--softViolet)
+}
+#card{
+    display: grid;
+}
+.heading{
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.specs>p{
+    text-transform: uppercase;
+}
+
+.desc{
+    color: var(--sTransWhite2);
+    font-family: 'Lexend Deca', sans-serif;
+}
+#photo{
+    background:linear-gradient(hsla(277, 64%, 61%, 0.685),hsl(277, 64%, 61%,0.685)),
+     url(images/image-header-mobile.jpg);
+min-height: 200px;
+background-size: cover;
+
+}
+#grid1{
+    background-color: var(--desatBlue);
+
+}
+.specs>p{
+    margin:0;
+}
+
+.specs{margin-bottom: 15px;}
+.desc{
+    line-height: 1.5;
+}
+.attribution{
+    margin-top:30px;
+    color: var(--sTransWhite);
+}
+@media(max-width:915px){
+    #card{
+   grid-template-rows:40% 60%;
+   background-size: contain;
+   max-width:400px ;
+   margin:auto;
+    }
+    #wrapper{
+        padding:60px 20px;
+        margin:auto;
+    }
+    #photo{
+       order: -1;
+       border-radius: 10px 10px 0 0;
+      
+    }
+    #grid1{
+        text-align: center;
+        font-size: 12px;
+        border-radius: 0 0 10px 10px;
+    }
+#content> .desc{
+    margin-bottom: 30px;
+}
+    #content{margin:25px;}
+
+    .specs{margin-bottom: 20px;}
+}
+
+@media(min-width:915px){
+
+#wrapper{
+
+width: 100%;
+margin:50px auto;
+}
+
+
+#card{
+
+    justify-content: center;
+  
+    margin: auto;
+    grid-template-columns: 45% 45%;
+}
+#benefits{
+    margin-top:40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#grid1{
+    padding:50px;
+}
+
+
+}
+
